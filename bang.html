@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let darawtable ='<table border="1">'
+    for (let i=1;i<=9;i++){
+        darawtable += "<tr>"
+        for (let j=1;j<=9;j++){
+            darawtable += '<td>'+i+'*'+j+'='+i*j+'</td>'
+        }darawtable += "</tr>"
+    }darawtable +='</table>'
+    document.write(darawtable)
+</script>
+</body>
+</html>
