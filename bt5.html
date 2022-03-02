@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+        let n = prompt("nhap so")
+        var flag = true;
+        if (n < 2) {
+            flag = false;
+            document.write("ko la so ngto")
+        }
+        else if (n == 2) {
+            flag = true;
+            document.write("ko la so ng to")
+        }
+        else if (n % 2 == 0) {
+            flag = false;
+            document.write("ko la so ngto")
+        }
+        else {
+            for (var i = 3; i <= Math.sqrt(n); i += 2)
+            {
+                if (n % i == 0) {
+                    flag = false;
+                    document.write("la so ngto")
+                    break;
+                }
+            }
+        }
+
+</script>
+</body>
+</html>
